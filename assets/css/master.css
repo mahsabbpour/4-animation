@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: #1D4350;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A43931, #1D4350);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.box {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 9999px;
+    transform-style: preserve-3d;
+    perspective: 9999px;
+    transform-style: preserve-3d;
+    animation: rotate 3s infinite alternate linear 2s forwards;
+    transform: rotateY(40deg) rotateX(40deg) translateZ(0)scale(2.5);
+}
+
+.box>h1>a {
+    letter-spacing: 3px;
+    text-shadow: 10px 10px 7px #1D4350;
+    -webkit-text-stroke: 15px #1d43502d;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+
+
+}
+
+@keyframes rotate {
+    100% {
+
+        transform: rotateY(-40deg) rotateX(-43deg)scale(1);
+    }
+}
